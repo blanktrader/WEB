@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    
+}
+
+header h1 {
+    text-shadow: 1px 1px 1px greenyellow, 1px 1px 5px black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 1px black, 1px 1px 5px black;
+    transition: all .5s;
+    padding: 15px;
+}
+
+header h1:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main figure img {
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px 1px 20px black;
+    animation: cochonBouge 10s infinite;
+}
+
+@keyframes cochonBouge {
+    0% {width: default;}
+    50% {width: 70%;}
+    100% {width: default;}
+}
+
+main p {
+    font-size: 2rem;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+footer nav ul li {
+    padding: 50px;
+}
+
+footer nav ul li a {
+    font-size: 2rem;
+    color: red;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black, 1px 1px 5px red;
+}
+
+footer button {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px red, 1px 1px 5px red;
+    transition: all .5s;    
+}
+
+footer button:hover {
+    transform: scale(1.2);
+}
+
+footer button a {
+    text-decoration: none;
+    color: red;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
